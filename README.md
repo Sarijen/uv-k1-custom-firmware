@@ -1,6 +1,7 @@
-# Stats
+# Note
+This is repository is a fork of the armel/uv-k1-k5v3-firmware-custom. Since github doesn't allow me to "officialy fork" a repo more than once, this is a workaround.
 
-![Alt](https://repobeats.axiom.co/api/embed/ecdd86aa536b716f088339a0c5ee734558f78c28.svg "Repobeats analytics image")
+It will mainly implement personal changes/features that shouldn't be ever pushed to upstream.
 
 # F4HWN firmware port for the UV-K1 and UV-K5 V3 using the PY32F071 MCU
 
