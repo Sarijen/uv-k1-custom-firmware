@@ -274,7 +274,7 @@ void UI_DisplayWelcome(void)
 
         if (gEeprom.POWER_ON_DISPLAY_MODE == POWER_ON_DISPLAY_MODE_VOLTAGE)
         {
-            strcpy(WelcomeString0, "VOLTAGE");
+            strcpy(WelcomeString0, "SARIJEN");
             strcpy(WelcomeString1, WelcomeString2);
         }
         else if(gEeprom.POWER_ON_DISPLAY_MODE == POWER_ON_DISPLAY_MODE_ALL)

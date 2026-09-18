@@ -1737,7 +1737,7 @@ void UI_DisplayMain(void)
 
         enum VfoState_t state = VfoState[vfo_num];
 
-        if (state != VFO_STATE_NORMAL)
+        if (state != VFO_STATE_NORMAL && state != 3)
         {
             if (state < ARRAY_SIZE(VfoStateStr))
                 UI_PrintString(VfoStateStr[state], 35, 0, line, 8);

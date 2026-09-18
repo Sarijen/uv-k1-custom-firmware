@@ -34,7 +34,7 @@
 #define PWM_FREQ 4000
 // 32 levels keep every step of the value[] table distinct after
 // quantization while halving the DMA duty cycle buffer (128 bytes saved)
-#define DUTY_CYCLE_LEVELS 32
+#define DUTY_CYCLE_LEVELS 128
 
 #define DUTY_CYCLE_ON_VALUE GPIO_PIN_MASK(GPIO_PIN_BACKLIGHT)
 #define DUTY_CYCLE_OFF_VALUE (DUTY_CYCLE_ON_VALUE << 16)
@@ -70,9 +70,9 @@ static void BACKLIGHT_SetHardwareBrightness(uint8_t brightness);
 #ifdef ENABLE_FEAT_F4HWN
     const uint8_t value[] = {
         0,    // 0 off
-        8,    // 1 visible in the dark
-        16,   // 2
-        24,   // 3
+        2,    // 1 visible in the dark
+        8,    // 2
+        16,   // 3
         32,   // 4
         48,   // 5
         72,   // 6

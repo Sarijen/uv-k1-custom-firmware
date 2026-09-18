@@ -20,7 +20,7 @@ RELEASE_PRESETS=(Fusion Transfer FieldOps Labs Max)
 FLASH_LIMIT=$((118 * 1024))
 RAM_LIMIT=$((16 * 1024))
 
-PRESET=${1:-Fusion}
+PRESET=${1:-Custom}
 shift || true  # remove preset from arguments if present
 
 # Any remaining args will be treated as CMake cache variables
@@ -138,7 +138,7 @@ build_preset() {
     return "$status"
   fi
 
-  bin_file="build/${preset}/f4hwn.${preset_slug}.bin"
+  bin_file="build/${preset}/0f4hwn.${preset_slug}.bin"
   if [[ -z "$bin_file" || ! -f "$bin_file" ]]; then
     if (( QUIET )); then
       printf "FAILED\n"
